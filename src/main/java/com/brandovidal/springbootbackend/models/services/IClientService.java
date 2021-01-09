@@ -7,4 +7,10 @@ import java.util.List;
 public interface IClientService {
 
     List<Client> findAll();
+
+    Client findById(Long id);
+
+    Client save(Client cliente);
+
+    void delete(Long id);
 }
